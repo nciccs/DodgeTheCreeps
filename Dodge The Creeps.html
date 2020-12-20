@@ -164,15 +164,13 @@
 			requestAnimationFrame(animate);
 
 			function adjustCanvasDimensions() {
-				/*var scale = window.devicePixelRatio || 1;
-				var width = window.innerWidth;
-				var height = window.innerHeight;
+				var scale = window.devicePixelRatio || 1;
+				var width = 480;
+				var height = 720;
 				canvas.width = width * scale;
 				canvas.height = height * scale;
 				canvas.style.width = width + "px";
-				canvas.style.height = height + "px";*/
-                canvas.width = 480;
-				canvas.height = 720;
+				canvas.style.height = height + "px";
 			}
 			animationCallbacks.push(adjustCanvasDimensions);
 			adjustCanvasDimensions();
